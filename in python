@@ -1,0 +1,13 @@
+a=input("Enter: ")
+b=''
+for i in a:
+    if i.isdigit():
+        b=b+i
+    else:
+        b=b+','
+print(b)
+c=b.strip().split()     # strip used to remove the space
+print("max in string : ",c)
+print(max(c))
+d=[int(i) for i in c]
+print(max(d))
